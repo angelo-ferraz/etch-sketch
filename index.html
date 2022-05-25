@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container copyrightangelo" id="gameframe">
+        <h1><em>MAGIC</em> <span style="font-size: 180%">Etch A Sketch<sup>®</sup></span> <em>SCREEN</em></h1>
+        <div class="container" id="gamearea"></div>
+
+    <div id="bottompad">
+        <div class="controls" id="color">
+            <div class="knob">
+                <input type="color" id="colorknob" name="colorbtn" value="#000">
+                <div id="colordiv"><label id="colorselect" for="colorbtn">Colour</label></div>
+            </div>
+        </div>
+        <div class="controls" id="resolution">
+            <input type="range" name="size" id="gridsizeslider" min="6" max="42" step="6" value="18">
+            <label id="slidertext" for="size">18x18</label>
+        </div>
+        <div class="controls" id="resetdiv">
+            <div class="knob">
+                <button id="reset">Redo</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
