@@ -28,7 +28,6 @@ span {margin: 38px;}
     grid-template-columns: repeat();
     grid-template-rows: repeat();
     background-color: white;
-    border: 1px solid rgb(141, 138, 138);
     height: 600px;
     width: 600px;
     margin-top: 20px;
