@@ -15,7 +15,7 @@ span {margin: 38px;}
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 700px;
+    width: 750px;
     margin: auto;
     padding-bottom: 15px;
     margin-top: 30px;
@@ -28,13 +28,19 @@ span {margin: 38px;}
     grid-template-columns: repeat();
     grid-template-rows: repeat();
     background-color: white;
-    height: 600px;
-    width: 600px;
+    height: 650px;
+    width: 650px;
     margin-top: 20px;
     border-radius: 5px;
     cursor: crosshair;
     -webkit-user-drag: none;
 }
+@media (max-width: 868px){
+    #gamearea {width: 500px; height: 500px;}
+    #gameframe {width: 600px; height: 600px;}
+
+} 
+
 
 #bottompad {
     display: flex;
