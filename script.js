@@ -1,5 +1,6 @@
 const gameArea = document.getElementById("gamearea");
 const colorKnob = document.getElementById("colorknob");
+const colorKnobRotate = document.getElementById("color");
 const resetKnob = document.getElementById("resetdiv");
 const sliderText = document.getElementById("slidertext");
 const gridSlider = document.getElementById("gridsizeslider");
@@ -43,7 +44,7 @@ gridSlider.addEventListener('input', function(e) {
 
     // Knob animation
     let a = gridRange * 3;
-    colorKnob.style.transform = `rotate(${a}deg)`;
+    colorKnobRotate.style.transform = `rotate(${a}deg)`;
     resetKnob.style.transform = `rotate(-${a}deg)`;
     
 });
@@ -75,6 +76,10 @@ resetKnob.addEventListener('click', e => {
 
 // Hide grid lines when clicking XxX
 let toggle = 0
+sliderText.addEventListener('mouseenter', e => {
+    toggletext = document.getElementById('tickingbomb');
+    toggletext.innerText = '';
+});
 
 sliderText.addEventListener('click', e => {
     babydiv = document.getElementsByClassName('cells');
