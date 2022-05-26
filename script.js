@@ -96,6 +96,10 @@ sliderText.addEventListener('mouseenter', e => {
     toggletext = document.getElementById('hideme');
     toggletext.innerText = '';
 });
+sliderText.addEventListener('ontouchmove', e => {
+    toggletext = document.getElementById('hideme');
+    toggletext.innerText = '';
+});
 
 sliderText.addEventListener('click', e => {
     babydiv = document.getElementsByClassName('cells');
